@@ -272,7 +272,7 @@ th{color:var(--muted);font-weight:600;background:#fafbfd}
 </div>
 
 <script>
-const API_URL = "https://script.google.com/macros/s/AKfycbzBjUMK3OJHCgTuH3GjJetd_HXLpcOO7UM66KIVHefboi4XtBVTh84yf8mMiZZRcgox/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwXmZ-7p6cOTv8Sz1l4QD-rN1ji2HlpjlMo89ymUqS-R28Oi7pdmVZTGa7j5b8C9G4c/exec";
 
 let currentUser = null;
 let recordsData = [];
@@ -287,7 +287,7 @@ function setAlert(msg, type = 'ok') {
 }
 
 async function apiPost(payload) {
-  if (!API_URL || API_URL.includes("https://script.google.com/macros/s/AKfycbzBjUMK3OJHCgTuH3GjJetd_HXLpcOO7UM66KIVHefboi4XtBVTh84yf8mMiZZRcgox/exec")) {
+  if (!API_URL || API_URL.includes("https://script.google.com/macros/s/AKfycbwXmZ-7p6cOTv8Sz1l4QD-rN1ji2HlpjlMo89ymUqS-R28Oi7pdmVZTGa7j5b8C9G4c/exec")) {
     throw new Error("API_URL тохируулаагүй байна. index.html дотор Web App URL-ээ оруулна уу.");
   }
   const res = await fetch(API_URL, {
